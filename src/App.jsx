@@ -15,7 +15,7 @@ const MenuTab = () => {
   return (
     <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
       <Tabs.Screen
-        name="Home"
+        name="Tampilan awal"
         component={Home}
         options={{
           tabBarIcon: ({size, color}) => (
@@ -24,7 +24,7 @@ const MenuTab = () => {
         }}
       />
       <Tabs.Screen
-        name="About"
+        name="pengaturan"
         component={About}
         options={{
           tabBarIcon: ({size, color}) => (
@@ -33,7 +33,7 @@ const MenuTab = () => {
         }}
       />
       <Tabs.Screen
-        name="Profile"
+        name="profile"
         component={Profile}
         options={{
           tabBarIcon: ({size, color}) => (

@@ -17,19 +17,19 @@ export default IconMenu;
 const styles = StyleSheet.create({
   container: {
     //borderWidth: 1,
-    margin: 5,
+    margin: 10,
     padding: 5,
-    width: 84,
+    width: 80,
     justifyContent: 'center',
     alignContent: 'center',
   },
   box: {
     borderWidth: 1,
-    width: 72,
+    width: 73,
     height: 72,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 110,
   },
   textIcon: {
     color: 'black',

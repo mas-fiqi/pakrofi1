@@ -1,8 +1,8 @@
-import {StyleSheet, Text, View, FlatList} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from './screens/Home';
 import About from './screens/About';
@@ -13,31 +13,31 @@ const Tabs = createBottomTabNavigator();
 
 const MenuTab = () => {
   return (
-    <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
+    <Tabs.Navigator screenOptions={{ tabBarActiveTintColor: 'green' }}>
       <Tabs.Screen
-        name="Tampilan awal"
+        name="Home"
         component={Home}
         options={{
-          tabBarIcon: ({size, color}) => (
+          tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons name="home" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="pengaturan"
+        name="About"
         component={About}
         options={{
-          tabBarIcon: ({size, color}) => (
+          tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons name="cog" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="Profile"
         component={Profile}
         options={{
-          tabBarIcon: ({size, color}) => (
-            <MaterialCommunityIcons name="group" size={size} color={color} />
+          tabBarIcon: ({ size, color }) => (
+            <MaterialCommunityIcons name="account" size={size} color={color} />
           ),
         }}
       />
@@ -50,9 +50,9 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Tab"
+          name="Main"
           component={MenuTab}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -62,3 +62,68 @@ function App() {
 export default App;
 
 const style = StyleSheet.create({});
+
+// import {StyleSheet, Text, View, FlatList} from 'react-native';
+// import React from 'react';
+// import {NavigationContainer} from '@react-navigation/native';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import Home from './screens/Home';
+// import About from './screens/About';
+// import Profile from './screens/Profile';
+
+// const Stack = createNativeStackNavigator();
+// const Tabs = createBottomTabNavigator();
+
+// const MenuTab = () => {
+//   return (
+//     <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
+//       <Tabs.Screen
+//         name="Tampilan awal"
+//         component={Home}
+//         options={{
+//           tabBarIcon: ({size, color}) => (
+//             <MaterialCommunityIcons name="home" size={size} color={color} />
+//           ),
+//         }}
+//       />
+//       <Tabs.Screen
+//         name="pengaturan"
+//         component={About}
+//         options={{
+//           tabBarIcon: ({size, color}) => (
+//             <MaterialCommunityIcons name="cog" size={size} color={color} />
+//           ),
+//         }}
+//       />
+//       <Tabs.Screen
+//         name="profile"
+//         component={Profile}
+//         options={{
+//           tabBarIcon: ({size, color}) => (
+//             <MaterialCommunityIcons name="group" size={size} color={color} />
+//           ),
+//         }}
+//       />
+//     </Tabs.Navigator>
+//   );
+// };
+
+// function App() {
+//   return (
+//     <NavigationContainer>
+//       <Stack.Navigator>
+//         <Stack.Screen
+//           name="screens"
+//           component={MenuTab}
+//           options={{headerShown: false}}
+//         />
+//       </Stack.Navigator>
+//     </NavigationContainer>
+//   );
+// }
+
+// export default App;
+
+// const style = StyleSheet.create({});

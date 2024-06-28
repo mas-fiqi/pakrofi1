@@ -10,7 +10,7 @@ const Data = [
   {id: 5, label: 'Gojek'},
 ];
 
-const Home = ({navigation}) => {
+const About = ({navigation}) => {
   return (
     <View>
       <FlatList
@@ -21,13 +21,13 @@ const Home = ({navigation}) => {
       <TouchableOpacity
         onPress={() => navigation.navigate('Home')}
         style={styles.btn}>
-        <Text style={styles.txt}>Ke Home</Text>
+        <Text style={styles.txt}>Home</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default Home;
+export default About ;
 
 const styles = StyleSheet.create({
   btn: {

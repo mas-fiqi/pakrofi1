@@ -19,9 +19,9 @@ const Home = ({navigation}) => {
         horizontal={true}
       />
       <TouchableOpacity
-        onPress={() => navigation.navigate('About')}
+        onPress={() => navigation.navigate('Profile')}
         style={styles.btn}>
-        <Text style={styles.txt}>Ke About</Text>
+        <Text style={styles.txt}>Profile</Text>
       </TouchableOpacity>
     </View>
   );

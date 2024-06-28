@@ -5,7 +5,7 @@ const IconMenu = ({label}) => {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.box}>
-        <Text style={styles.textIcon}>Icon</Text>
+        <Text style={styles.textIcon}>Ikon</Text>
       </View>
       <Text style={styles.textIcon}>{label}</Text>
     </TouchableOpacity>
